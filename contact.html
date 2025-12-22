@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About — Fosfor Web</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/script.js" defer></script>
+    <link href="https://fonts.googleapis.com/css2?family=Krona+One&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+</head>
+<body>
+    <div id="map-parallax" class="map-parallax"></div>
+    <div id="page-transition" class="page-transition-overlay"></div>
+    <div class="side-gradient left-gradient"></div>
+    <div class="side-gradient right-gradient"></div>
+    <main>
+        <nav>
+            <a class="site-logo" href="index.html" aria-label="Home"><img src="images/logo1.png" alt="Fosfor Logo" /></a>
+            <a href="index.html">/Home</a>
+            <a href="about.html">/About</a>
+            <a href="events.html">/Events</a>
+            <a href="substances.html">/Substances</a>
+            <a href="contact.html" class="active">/Contact</a>
+            <button id="terminal-toggle" aria-pressed="false" aria-label="Toggle terminal">Close Terminal</button>
+        </nav>
+
+        <section class="page-content">
+            <div class="contact-container">
+                <div id="contact-area">
+                    <div id="contact-area">
+                        <div class="contact-grid">
+
+                            <!-- 1 -->
+                            <div class="box-frame contact-intro">
+                                <h2 class="writing-text">Write us a message..</h2>
+                            </div>
+
+                            <!-- 2 -->
+                            <form id="contact-form" class="contact-form" onsubmit="return false;" style="margin-top:1rem;">
+                                <div class="form-group">
+                                    <label for="subject">Subject</label>
+                                    <input type="text" id="subject" name="subject" placeholder="About my great day" autocomplete="off" />
+                                </div>
+                                <div class="form-group">
+                                    <label for="your-email">Your email</label>
+                                    <input type="email" id="your-email" name="your-email" placeholder="you@example.com" autocomplete="off" />
+                                </div>
+                                <div class="form-group">
+                                    <label for="body">Message</label>
+                                    <textarea id="body" name="body" rows="6" placeholder="Your message..." autocomplete="off"></textarea>
+                                </div>
+                                <div style="display:flex;gap:0.5rem;align-items:center;">
+                                    <button id="send-btn" class="send-btn" type="button">Send</button>
+                                </div>
+                            </form>
+
+                            <!-- 3 -->
+                            <aside class="box-frame social-box" aria-label="Social links">
+                                <h2>More links</h2>
+                                <ul class="social-list">
+                                    <li><a href="https://fosforlabel.bandcamp.com/" target="_blank" rel="noopener">bandcamp</a></li>
+                                    <li><a href="https://instagram.com/" target="_blank" rel="noopener">instagram</a></li>
+                                    <li><a href="https://facebook.com/" target="_blank" rel="noopener">facebook</a></li>
+                                </ul>
+                            </aside>
+
+                        </div>
+                    </div>
+
+
+                    <div id="contact-result" aria-live="polite" style="margin-top:1rem;color:rgba(255,255,255,0.85);"></div>
+                </div>
+            </div>
+        </section>
+        <footer class="site-footer">
+            <img src="images/ascii.png" alt="ASCII Art Fosfor" class="footer-ascii"/>
+            <div class="footer-spacer"></div>
+        </footer>
+    </main>
+
+    <script>
+        function clearContactForm() {
+            const subjectEl = document.getElementById('subject');
+            const emailEl = document.getElementById('your-email');
+            const bodyEl = document.getElementById('body');
+            const resultEl = document.getElementById('contact-result');
+            if(subjectEl) subjectEl.value = '';
+            if(emailEl) emailEl.value = '';
+            if(bodyEl) bodyEl.value = '';
+            if(resultEl) resultEl.textContent = '';
+        }
+
+        // Clear on initial load and when page is shown from bfcache (back/forward)
+        window.addEventListener('DOMContentLoaded', clearContactForm);
+        window.addEventListener('pageshow', function(e){ clearContactForm(); });
+
+        document.getElementById('send-btn').addEventListener('click', function(){
+            const subject = document.getElementById('subject').value || '(no subject)';
+            const email = document.getElementById('your-email').value || '(no email)';
+            const body = document.getElementById('body').value || '(no message)';
+
+            // Simple client-side confirmation message
+            const result = document.getElementById('contact-result');
+            result.textContent = 'Message transmitted.';
+
+            // Clear form
+            clearContactForm();
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Substances — Fosfor Web</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/script.js" defer></script>
+    <link href="https://fonts.googleapis.com/css2?family=Krona+One&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+</head>
+<body>
+    <div id="map-parallax" class="map-parallax"></div>
+    <div id="page-transition" class="page-transition-overlay"></div>
+    <div class="side-gradient left-gradient"></div>
+    <div class="side-gradient right-gradient"></div>
+    <main>
+        <nav>
+            <a class="site-logo" href="index.html" aria-label="Home"><img src="images/logo1.png" alt="Fosfor Logo" /></a>
+            <a href="index.html">/Home</a>
+            <a href="about.html">/About</a>
+            <a href="events.html">/Events</a>
+            <a href="substances.html" class="active">/Substances</a>
+            <a href="contact.html">/Contact</a>
+            <button id="terminal-toggle" aria-pressed="false" aria-label="Toggle terminal">Close Terminal</button>
+        </nav>
+
+        <section class="page-content">
+            <div class="substances-container">
+
+                <!-- Past Substances Event -->
+                <div class="box-frame">
+                    <h2>Substances Vol1 | Archive</h2>
+                    <p>FOSFOR curated a sample pack and invited young producers to create music. Here are the results.</p>
+                    <p>
+                        Sample Pack: 
+                        <a href="https://bandcamp.com/" target="_blank" class="substances-link">Download / Listen</a>
+                    </p>
+                </div>
+
+                <!-- Winners -->
+                <div class="contest-winners">
+                    <h3>Winners</h3>
+                    <div class="contestants-grid">
+                        <div class="contestant-card">
+                            <img src="images/winner1.jpg" alt="Winner 1" />
+                            <h4>Gabriele</h4>
+                            <p>Produced a minimal noise-inspired track.</p>
+                            <iframe width="100%" height="120" scrolling="no" frameborder="no" allow="autoplay"
+                                src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/123456789&color=%23ff5500">
+                            </iframe>
+                        </div>
+                        <div class="contestant-card">
+                            <img src="images/winner2.jpg" alt="Winner 2" />
+                            <h4>Lukas</h4>
+                            <p>Experimental textures with tape-sample manipulations.</p>
+                            <iframe width="100%" height="120" scrolling="no" frameborder="no" allow="autoplay"
+                                src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/987654321&color=%23ff5500">
+                            </iframe>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- All Contestants -->
+                <div class="all-contestants">
+                    <h3>All Contestants</h3>
+                    <div class="contestants-grid">
+                        <div class="contestant-card">
+                            <img src="images/contestant1.jpg" alt="Contestant 1" />
+                            <h4>Pavel</h4>
+                            <p>Lo-fi ambient textures.</p>
+                            <iframe width="100%" height="120" scrolling="no" frameborder="no" allow="autoplay"
+                                src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/234567891&color=%23ff5500">
+                            </iframe>
+                        </div>
+                        <div class="contestant-card">
+                            <img src="images/contestant2.jpg" alt="Contestant 2" />
+                            <h4>Dominykas</h4>
+                            <p>Dark industrial inspired beats.</p>
+                            <iframe width="100%" height="120" scrolling="no" frameborder="no" allow="autoplay"
+                                src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/345678912&color=%23ff5500">
+                            </iframe>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Upcoming Substances Event -->
+                <div class="box-frame upcoming-event">
+                    <h2>Substances Vol2 | Coming Soon</h2>
+                    <p>Next round of the FOSFOR Substances contest is about to happen. Participants will be given the latest curated sample pack to create their pieces.</p>
+                    <p>
+                        Sample Pack: 
+                        <a href="https://bandcamp.com/" target="_blank" class="substances-link">Download / Listen</a>
+                    </p>
+                </div>
+
+                <!-- General Rules -->
+                <div class="box-frame general-rules">
+                    <h2>Contest Rules|</h2>
+                    <ul>
+                        <li>Use only sounds from the provided sample pack.</li>
+                        <li>All submissions must be original work.</li>
+                        <li>Deadline for submissions will be announced per contest.</li>
+                        <li>Tracks should not exceed 5 minutes.</li>
+                        <li>Respect community and copyright guidelines.</li>
+                    </ul>
+                </div>
+
+            </div>
+        </section>
+        <footer class="site-footer">
+            <img src="images/ascii.png" alt="ASCII Art Fosfor" class="footer-ascii"/>
+            <div class="footer-spacer"></div>
+        </footer>
+    </main>
+</body>
+</html>

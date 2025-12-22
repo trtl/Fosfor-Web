@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events — Fosfor Web</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/script.js" defer></script>
+    <link href="https://fonts.googleapis.com/css2?family=Krona+One&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+</head>
+<body>
+    <div id="map-parallax" class="map-parallax"></div>
+    <div id="page-transition" class="page-transition-overlay"></div>
+    <div class="side-gradient left-gradient"></div>
+    <div class="side-gradient right-gradient"></div>
+    <main>
+        <nav>
+            <a class="site-logo" href="index.html" aria-label="Home"><img src="images/logo1.png" alt="Fosfor Logo" /></a>
+            <a href="index.html">/Home</a>
+            <a href="about.html">/About</a>
+            <a href="events.html" class="active">/Events</a>
+            <a href="substances.html">/Substances</a>
+            <a href="contact.html">/Contact</a>
+            <button id="terminal-toggle" aria-pressed="false" aria-label="Toggle terminal">Close Terminal</button>
+        </nav>
+
+        <section class="page-content">
+            <div class="events-container">
+
+                <div class="box-frame">
+                    <h2>Upcoming Events|</h2>
+                </div>
+
+                <div class="events-list upcoming-events">
+                    <div class="event-card">
+                        <p class="event-date">Dec 28, 2025</p>
+                        <h3 class="event-name">Noise & Signal Night</h3>
+                        <p class="event-artist">Gabriele, Lukas</p>
+                        <p class="event-desc">An immersive night exploring interference and sonic integrity.</p>
+                        <a href="https://www.residentadvisor.net/" target="_blank" class="event-link">More info</a>
+                    </div>
+
+                    <div class="event-card">
+                        <p class="event-date">Jan 12, 2026</p>
+                        <h3 class="event-name">FOSFOR Live Set</h3>
+                        <p class="event-artist">Pavel & Dominykas</p>
+                        <p class="event-desc">A curated experience blending textures, noise, and presence.</p>
+                        <a href="https://www.residentadvisor.net/" target="_blank" class="event-link">More info</a>
+                    </div>
+                </div>
+
+                <div class="box-frame">
+                    <h2>Past Events|</h2>
+                </div>
+
+                <div class="events-list past-events">
+                    <div class="event-card">
+                        <p class="event-date">Nov 20, 2025</p>
+                        <h3 class="event-name">Signal Festival</h3>
+                        <p class="event-artist">Various Artists</p>
+                        <p class="event-desc">Celebrating interference and noise in modern culture.</p>
+                        <a href="https://www.residentadvisor.net/" target="_blank" class="event-link">More info</a>
+                    </div>
+
+                    <div class="event-card">
+                        <p class="event-date">Oct 15, 2025</p>
+                        <h3 class="event-name">Analog Reverberations</h3>
+                        <p class="event-artist">Gabriele & Lukas</p>
+                        <p class="event-desc">Hands over software — a night of tactile sonic presence.</p>
+                        <a href="https://www.residentadvisor.net/" target="_blank" class="event-link">More info</a>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <footer class="site-footer">
+            <img src="images/ascii.png" alt="ASCII Art Fosfor" class="footer-ascii"/>
+            <div class="footer-spacer"></div>
+        </footer>
+    </main>
+</body>
+</html>

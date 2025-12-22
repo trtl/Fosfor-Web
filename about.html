@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About — Fosfor Web</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/script.js" defer></script>
+    <link href="https://fonts.googleapis.com/css2?family=Krona+One&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+</head>
+<svg width="0" height="0" aria-hidden="true">
+    <filter
+        id="edge-grain"
+        x="-0.5"
+        y="-0.5"
+        width="2"
+        height="2"
+        color-interpolation-filters="sRGB"
+    >
+        <!-- shrink mask -->
+        <feMorphology operator="erode" radius="48" in="SourceAlpha" result="eroded" />
+
+        <!-- blur edge -->
+        <feGaussianBlur stdDeviation="16" in="eroded" result="blur" />
+
+        <!-- noise -->
+        <feTurbulence
+        type="fractalNoise"
+        baseFrequency="0.8"
+        numOctaves="4"
+        seed="2"
+        result="noise"
+        />
+
+        <!-- distort edge -->
+        <feDisplacementMap
+        in="blur"
+        in2="noise"
+        scale="40"
+        xChannelSelector="R"
+        yChannelSelector="G"
+        result="distorted"
+        />
+
+        <!-- apply mask -->
+        <feComposite
+        in="SourceGraphic"
+        in2="distorted"
+        operator="in"
+        />
+    </filter>
+</svg>
+
+<body>
+    <div id="map-parallax" class="map-parallax"></div>
+    <div id="page-transition" class="page-transition-overlay"></div>
+    <div class="side-gradient left-gradient"></div>
+    <div class="side-gradient right-gradient"></div>
+    <main>
+        <nav>
+            <a class="site-logo" href="index.html" aria-label="Home"><img src="images/logo1.png" alt="Fosfor Logo" /></a>
+            <a href="index.html">/Home</a>
+            <a href="about.html" class="active">/About</a>
+            <a href="events.html">/Events</a>
+            <a href="substances.html">/Substances</a>
+            <a href="contact.html">/Contact</a>
+            <button id="terminal-toggle" aria-pressed="false" aria-label="Toggle terminal">Close Terminal</button>
+        </nav>
+        <section class="page-content">
+            <div class="about-container">
+                
+                <!-- Who Are We Section -->
+                <div class="about-section">
+                    <div class="section-heading">
+                        <div class="box-frame">
+                            <h2>Who are we?</h2>
+                        </div>
+                    </div>
+                    
+                    <div class="section-content">
+                        <div class="section-image">                 
+                        </div>
+                        <div class="section-text">
+                            <p>FOSFOR was born from interference — a reaction to the noise fatigue of modern culture. It's not a brand, not a trend, not a playlist algorithm. It's a reform signal. A care network. A space for sonic integrity and presence.
+                                FOSFOR was born from interference — a reaction to the noise fatigue of modern culture. It's not a brand, not a trend, not a playlist algorithm. It's a reform signal. A care network. A space for sonic integrity and presence.
+                                FOSFOR was born from interference — a reaction to the noise fatigue of modern culture. It's not a brand, not a trend, not a playlist algorithm. It's a reform signal. A care network. A space for sonic integrity and presence.
+                                FOSFOR was born from interference — a reaction to the noise fatigue of modern culture. It's not a brand, not a trend, not a playlist algorithm. It's a reform signal. A care network. A space for sonic integrity and presence.
+                                FOSFOR was born from interference — a reaction to the noise fatigue of modern culture. It's not a brand, not a trend, not a playlist algorithm. It's a reform signal. A care network. A space for sonic integrity and presence.
+                                FOSFOR was born from interference — a reaction to the noise fatigue of modern culture. It's not a brand, not a trend, not a playlist algorithm. It's a reform signal. A care network. A space for sonic integrity and presence.
+                            </p>
+                        </div>
+                        <div class="section-image">
+                            <img src="images/pvz.jpg" alt="FOSFOR visual" class="grain-edge" />
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Our Philosophy Section -->
+                <div class="about-section">
+                    <div class="section-heading">
+                        <div class="box-frame">
+                            <h2>Our Philosophy</h2>
+                        </div>
+                    </div>
+                    
+                    <div class="section-content">
+                        <div class="section-image">
+                            <img src="images/pvz.jpg" alt="FOSFOR philosophy" class="grain-edge"/>
+                        </div>
+                        <div class="section-text">
+                            <p><strong>7 Commandments:</strong></p>
+                            <ul>
+                                <li>Presence over screens.</li>
+                                <li>Integrity over hype.</li>
+                                <li>Noise over algorithms.</li>
+                                <li>Care over chaos.</li>
+                                <li>Community over ego.</li>
+                                <li>Hands over software.</li>
+                                <li>Signal over spectacle.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Team Section -->
+                <div class="team-section-wrapper">
+                    <div class="team-heading">
+                        <div class="box-frame">
+                            <h2>Our Team</h2>
+                        </div>
+                    </div>
+
+                    <div class="team-names-column">
+                        <ul class="team-names-list">
+                            <li><a href="#" class="team-name" onclick="showTeamMember(0, event)">Gabriele</a></li>
+                            <li><a href="#" class="team-name" onclick="showTeamMember(1, event)">Lukas</a></li>
+                            <li><a href="#" class="team-name" onclick="showTeamMember(2, event)">Pavel</a></li>
+                            <li><a href="#" class="team-name" onclick="showTeamMember(3, event)">Dominykas</a></li>
+                            <li><a href="#" class="team-name" onclick="showTeamMember(4, event)">Justas</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="team-display-area">
+                        <!-- Placeholder -->
+                        <div class="team-member-placeholder" id="member-placeholder">
+                            Select a member
+                        </div>
+
+                        <div class="team-member-display hidden" id="member-0">
+                            <div class="team-member-picture">
+                                <img src="images/Gabriele.png" alt="Gabriele" />
+                            </div>
+                            <div class="team-member-info">
+                                <h3 class="team-member-name">Gabriele</h3>
+                                <p class="team-member-role">Creative</p>
+                            </div>
+                        </div>
+
+                        <div class="team-member-display hidden" id="member-1">
+                            <div class="team-member-picture">
+                                <img src="images/Lukas.png" alt="Lukas" />
+                            </div>
+                            <div class="team-member-info">
+                                <h3 class="team-member-name">Lukas</h3>
+                                <p class="team-member-role">Creative</p>
+                            </div>
+                        </div>
+
+                        <div class="team-member-display hidden" id="member-2">
+                            <div class="team-member-picture">
+                                <img src="images/Pavel.png" alt="Pavel" />
+                            </div>
+                            <div class="team-member-info">
+                                <h3 class="team-member-name">Pavel</h3>
+                                <p class="team-member-role">Artist</p>
+                            </div>
+                        </div>
+
+                        <div class="team-member-display hidden" id="member-3">
+                            <div class="team-member-picture">
+                                <img src="images/Dominykas.png" alt="Dominykas" />
+                            </div>
+                            <div class="team-member-info">
+                                <h3 class="team-member-name">Dominykas</h3>
+                                <p class="team-member-role">Artist</p>
+                            </div>
+                        </div>
+
+                        <div class="team-member-display hidden" id="member-4">
+                            <div class="team-member-picture">
+                                <img src="images/Justas.png" alt="Justas" />
+                            </div>
+                            <div class="team-member-info">
+                                <h3 class="team-member-name">Justas</h3>
+                                <p class="team-member-role">Artist</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <footer class="site-footer">
+            <img src="images/ascii.png" alt="ASCII Art Fosfor" class="footer-ascii"/>
+            <div class="footer-spacer"></div>
+        </footer>
+    </main>
+    <script>
+        function showTeamMember(index, event) {
+            event.preventDefault();
+            
+            // Remove active class from all names
+            document.querySelectorAll('.team-name').forEach(name => {
+                name.classList.remove('active');
+            });
+            
+            // Add active class to clicked name
+            event.target.classList.add('active');
+            
+            // Hide all member displays
+            document.querySelectorAll('.team-member-display').forEach(display => {
+                display.classList.add('hidden');
+            });
+            
+            // Show selected member display
+            const memberDisplay = document.getElementById(`member-${index}`);
+            memberDisplay.classList.remove('hidden');
+
+            // Hide the placeholder
+            const placeholder = document.getElementById('member-placeholder');
+            if(placeholder) placeholder.classList.add('hidden');
+            
+            // Apply typing animation to the selected member's name
+            const nameEl = memberDisplay.querySelector('.team-member-name');
+            typeIntoTeamName(nameEl);
+        }
+
+        function typeIntoTeamName(el) {
+            const raw = (el.textContent || '').trim();
+            el.textContent = '';
+            
+            const typed = document.createElement('span');
+            typed.className = 'typed-text';
+            el.appendChild(typed);
+            
+            const cursor = document.createElement('span');
+            cursor.className = 'type-cursor';
+            cursor.textContent = '|';
+            el.appendChild(cursor);
+            
+            let i = 0;
+            function step() {
+                if (i < raw.length) {
+                    typed.textContent += raw.charAt(i);
+                    i++;
+                    const jitter = Math.random() * 24;
+                    setTimeout(step, 40 + jitter);
+                } else {
+                    cursor.remove();
+                }
+            }
+            step();
+        }
+    </script>
+</body>
+</html>
