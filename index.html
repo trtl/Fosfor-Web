@@ -5,91 +5,86 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fosfor Web</title>
     <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;700;800&display=swap" rel="stylesheet">
     <script src="js/script.js" defer></script>
-    <link href="https://fonts.googleapis.com/css2?family=Krona+One&display=swap" rel="stylesheet">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
-    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
 </head>
-<body>
-    <div id="map-parallax" class="map-parallax"></div>
-    <div id="page-transition" class="page-transition-overlay"></div>
-    <div class="side-gradient left-gradient"></div>
-    <div class="side-gradient right-gradient"></div>
+<body class="page-news">
     <main>
+        <header>
+            <img src="images/FOSFORlogo.png">
+            <p>
+                FOSFOR IS A CULTURAL SIGNAL NETWORK-AN EVOLVING CHAIN OF EVENTS, ARCHIVES, AND 
+                COLLABORATIONS SHAPING A SHARED SONIC MEMORY ACROSS COMMUNITIES.
+            </p>
+        </header>
         <nav>
-            <a class="site-logo" href="index.html" aria-label="Home"><img src="images/logo1.png" alt="Fosfor Logo" /></a>
-            <a href="index.html" class="active">/Home</a>
-            <a href="about.html">/About</a>
-            <a href="events.html">/Events</a>
-            <a href="substances.html">/Substances</a>
-            <a href="contact.html">/Contact</a>
+            <div class="nav-led"></div>
+            <div class="nav-bar-links">
+                <a href="index.html" class="active">NEWS</a>
+                <a href="about.html">ABOUT</a>
+                <a href="events.html">EVENTS</a>
+                <a href="substances.html">SUBSTANCES</a>
+                <a href="contact.html">CONTACT</a>
+            </div>
         </nav>
-        <section class="hero-section">
-            <div class="hero-content">
-                <div class="hero-text">
-                    <h1>We are FOSFOR</h1>
-                    <p class="typed-text">A space for sonic integrity and presence...</p>
-                </div>
-                <div class="hero-glb">
-                    <model-viewer
-                        src="models/pvz.glb"\
-                        alt="Fosfor 3D model"
-                        auto-rotate
-                        rotation-per-second="90deg"
-                        camera-controls 
-                        camera-orbit="30deg 69deg auto"
-                        interaction-prompt="none"
-                        shadow-intensity="0.5">
-                    </model-viewer>
-                </div>
+
+        <div class="hero">
+            <img src="images/hero.png">
+            <img src="images/hero1.png">
+        </div>
+
+        <article class="news-item">
+            <div class="news-text">
+                <p>2026 01 24</p>
+                <h2>MOVIE SCREENING IN ROMUVA</h2>
+                <h3>ELECTRONIC BODY MOVIE + AV VISUAL ACT</h3>
+                <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur gravida egestas pulvinar. Nunc tempus justo non interdum blandit. Pellentesque dapibus augue est, vel euismod tortor sagittis eu. Curabitur non sapien ultrices, ultrices arcu et, auctor augue. Maecenas vestibulum elit et mattis dignissim. Sed a imperdiet augue, sed lacinia magna. Donec odio elit, fermentum in ipsum eget, placerat auctor mauris. Vestibulum ut tellus eu augue commodo laoreet. Suspendisse quis felis bibendum, dignissim risus ac, laoreet ligula. Pellentesque sit amet pharetra lacus.
+
+Sed luctus ornare condimentum. Phasellus fringilla faucibus ipsum, quis ornare nibh dictum sagittis. Sed quis ullamcorper erat. Phasellus ut pellentesque nisl, ac pulvinar elit. Maecenas lacinia augue a risus faucibus iaculis. Pellentesque leo tellus, varius sit amet laoreet ut, malesuada ut urna. Nunc eu lobortis turpis. Duis nec nisi blandit, tristique dui sed, commodo elit. In vel ornare ex, ut ullamcorper mauris. Mauris malesuada orci vitae sem volutpat, eu ultrices libero feugiat. Nulla fringilla ipsum quis purus vestibulum, in mollis nisi maximus.
+
+Vestibulum a euismod nunc. Nulla quis tortor ac nibh suscipit fermentum. Vestibulum tincidunt metus ipsum, non cursus tellus ullamcorper vel. Proin non ipsum vel dolor mollis accumsan a ut mauris. Vivamus eget imperdiet nibh. Aenean quis varius nulla, nec feugiat neque. Maecenas imperdiet nibh quam, in aliquam enim convallis et. Nunc mollis mi sit amet ligula tempus sollicitudin. Etiam posuere nisl vel leo laoreet, ac elementum neque eleifend. Vivamus vitae ex lacus. Phasellus at pharetra augue, eu tempor lacus. Suspendisse ut neque nec dui dapibus facilisis. </p>
+                <a href="https://kcromuva.lt/repertuaras/?filter_filmu-zyme=festivalis" target="_blank" class="news-link">TICKETS</a>
             </div>
-        </section>
 
-        <section class="blog-section">
-            <div class="section-container">
+            <img src="images/romuva.png " alt="">
+        </article>
 
-                <div class="blog-post">
-                    <div class="blog-meta">
-                        <h2>Blog Post One</h2>
-                        <p class="blog-date">Dec 15, 2025</p>
-                    </div>
-                    <div class="blog-content">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                        <img src="images/blog.jpg" alt="Blog post 1 image">
-                        <p>More description about the blog post goes here. Keep it short and engaging to draw attention.</p>
-                    </div>
-                    <div class="blog-separator"></div>
-                </div>
+        <article class="news-item">
+            <div class="news-text">
+                <p>2026 01 24</p>
+                <h2>LAST DAYS TO PARTICIPATE</h2>
+                <h3>SUBSTANCES CONTEST IS COMING TO AN END</h3>
+                <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur gravida egestas pulvinar. Nunc tempus justo non interdum blandit. Pellentesque dapibus augue est, vel euismod tortor sagittis eu. Curabitur non sapien ultrices, ultrices arcu et, auctor augue. Maecenas vestibulum elit et mattis dignissim. Sed a imperdiet augue, sed lacinia magna. Donec odio elit, fermentum in ipsum eget, placerat auctor mauris. Vestibulum ut tellus eu augue commodo laoreet. Suspendisse quis felis bibendum, dignissim risus ac, laoreet ligula. Pellentesque sit amet pharetra lacus.
 
-                <div class="blog-post">
-                    <div class="blog-meta">
-                        <h2>Blog Post Two</h2>
-                        <p class="blog-date">Nov 20, 2025</p>
-                    </div>
-                    <div class="blog-content">
-                        <p>Another short introduction for the second blog post. Include relevant info and highlights.</p>
-                        <img src="images/blog.jpg" alt="Blog post 2 image">
-                        <p>Additional details, insights, or media for readers to explore.</p>
-                    </div>
-                    <div class="blog-separator"></div>
-                </div>
+Sed luctus ornare condimentum. Phasellus fringilla faucibus ipsum, quis ornare nibh dictum sagittis. Sed quis ullamcorper erat. Phasellus ut pellentesque nisl, ac pulvinar elit. Maecenas lacinia augue a risus faucibus iaculis. Pellentesque leo tellus, varius sit amet laoreet ut, malesuada ut urna. Nunc eu lobortis turpis. Duis nec nisi blandit, tristique dui sed, commodo elit. In vel ornare ex, ut ullamcorper mauris. Mauris malesuada orci vitae sem volutpat, eu ultrices libero feugiat. Nulla fringilla ipsum quis purus vestibulum, in mollis nisi maximus.
 
+Vestibulum a euismod nunc. Nulla quis tortor ac nibh suscipit fermentum. Vestibulum tincidunt metus ipsum, non cursus tellus ullamcorper vel. Proin non ipsum vel dolor mollis accumsan a ut mauris. Vivamus eget imperdiet nibh. Aenean quis varius nulla, nec feugiat neque. Maecenas imperdiet nibh quam, in aliquam enim convallis et. Nunc mollis mi sit amet ligula tempus sollicitudin. Etiam posuere nisl vel leo laoreet, ac elementum neque eleifend. Vivamus vitae ex lacus. Phasellus at pharetra augue, eu tempor lacus. Suspendisse ut neque nec dui dapibus facilisis. </p>
+                <a href="substances.html" target="_blank" class="news-link">CONTEST RULES</a>
             </div>
-        </section>
 
-        <footer class="site-footer">
-                <img src="images/ascii.png" alt="ASCII Art Fosfor" class="footer-ascii"/>
-                <div class="footer-spacer"></div>
+            <img src="images/romuva.png " alt="">
+        </article>
+
+        <footer>
+            <div class="footer-content">
+                <div class="footer-text">
+                    <p>TELL US YOUR<br>DREAMS.</p>
+                    <p>OR JUST SIMPLY SAY HI.</p>
+                    <button class="contact-btn">Contact us →</button>
+                </div>
+                <nav class="footer-nav">
+                    <ul>
+                        <li>NEWS</li>
+                        <li>ABOUT</li>
+                        <li>EVENTS</li>
+                        <li>SUBSTANCES</li>
+                        <li>CONTACT</li>
+                    </ul>
+                </nav>
+            </div>
+            <img src="images/FOSFORlogo.png">
         </footer>
     </main>        
 </body>
-<script>
-    const menuToggle = document.querySelector('.menu-toggle');
-    const nav = document.querySelector('nav');
-    const navLinks = document.querySelector('.nav-links');
-
-    menuToggle.addEventListener('click', () => {
-        navLinks.classList.toggle('show-links');
-    });
-</script>
 </html>

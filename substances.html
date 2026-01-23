@@ -4,113 +4,106 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Substances — Fosfor Web</title>
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/styles.css">\
+    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;700;800&display=swap" rel="stylesheet">
     <script src="js/script.js" defer></script>
-    <link href="https://fonts.googleapis.com/css2?family=Krona+One&display=swap" rel="stylesheet">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
 </head>
-<body>
-    <div id="map-parallax" class="map-parallax"></div>
-    <div id="page-transition" class="page-transition-overlay"></div>
-    <div class="side-gradient left-gradient"></div>
-    <div class="side-gradient right-gradient"></div>
+<body class="page-substances">
     <main>
+        <header>
+            <img src="images/FOSFORlogo.png">
+            <p>
+                FOSFOR IS A CULTURAL SIGNAL NETWORK-AN EVOLVING CHAIN OF EVENTS, ARCHIVES, AND 
+                COLLABORATIONS SHAPING A SHARED SONIC MEMORY ACROSS COMMUNITIES.
+            </p>
+        </header>
         <nav>
-            <a class="site-logo" href="index.html" aria-label="Home"><img src="images/logo1.png" alt="Fosfor Logo" /></a>
-            <a href="index.html">/Home</a>
-            <a href="about.html">/About</a>
-            <a href="events.html">/Events</a>
-            <a href="substances.html" class="active">/Substances</a>
-            <a href="contact.html">/Contact</a>
-            <button id="terminal-toggle" aria-pressed="false" aria-label="Toggle terminal">Close Terminal</button>
+            <div class="nav-led"></div>
+            <div class="nav-bar-links">
+                <a href="index.html">NEWS</a>
+                <a href="about.html">ABOUT</a>
+                <a href="events.html">EVENTS</a>
+                <a href="substances.html" class="active">SUBSTANCES</a>
+                <a href="contact.html">CONTACT</a>
+            </div>
         </nav>
 
-        <section class="page-content">
-            <div class="substances-container">
+        <div class="hero">
+            <img src="images/hero.png">
+            <img src="images/hero1.png">
+        </div>
 
-                <!-- Past Substances Event -->
-                <div class="box-frame">
-                    <h2>Substances Vol1 | Archive</h2>
-                    <p>FOSFOR curated a sample pack and invited young producers to create music. Here are the results.</p>
-                    <p>
-                        Sample Pack: 
-                        <a href="https://bandcamp.com/" target="_blank" class="substances-link">Download / Listen</a>
-                    </p>
-                </div>
-
-                <!-- Winners -->
-                <div class="contest-winners">
-                    <h3>Winners</h3>
-                    <div class="contestants-grid">
-                        <div class="contestant-card">
-                            <img src="images/winner1.jpg" alt="Winner 1" />
-                            <h4>Gabriele</h4>
-                            <p>Produced a minimal noise-inspired track.</p>
-                            <iframe width="100%" height="120" scrolling="no" frameborder="no" allow="autoplay"
-                                src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/123456789&color=%23ff5500">
-                            </iframe>
-                        </div>
-                        <div class="contestant-card">
-                            <img src="images/winner2.jpg" alt="Winner 2" />
-                            <h4>Lukas</h4>
-                            <p>Experimental textures with tape-sample manipulations.</p>
-                            <iframe width="100%" height="120" scrolling="no" frameborder="no" allow="autoplay"
-                                src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/987654321&color=%23ff5500">
-                            </iframe>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- All Contestants -->
-                <div class="all-contestants">
-                    <h3>All Contestants</h3>
-                    <div class="contestants-grid">
-                        <div class="contestant-card">
-                            <img src="images/contestant1.jpg" alt="Contestant 1" />
-                            <h4>Pavel</h4>
-                            <p>Lo-fi ambient textures.</p>
-                            <iframe width="100%" height="120" scrolling="no" frameborder="no" allow="autoplay"
-                                src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/234567891&color=%23ff5500">
-                            </iframe>
-                        </div>
-                        <div class="contestant-card">
-                            <img src="images/contestant2.jpg" alt="Contestant 2" />
-                            <h4>Dominykas</h4>
-                            <p>Dark industrial inspired beats.</p>
-                            <iframe width="100%" height="120" scrolling="no" frameborder="no" allow="autoplay"
-                                src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/345678912&color=%23ff5500">
-                            </iframe>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Upcoming Substances Event -->
-                <div class="box-frame upcoming-event">
-                    <h2>Substances Vol2 | Coming Soon</h2>
-                    <p>Next round of the FOSFOR Substances contest is about to happen. Participants will be given the latest curated sample pack to create their pieces.</p>
-                    <p>
-                        Sample Pack: 
-                        <a href="https://bandcamp.com/" target="_blank" class="substances-link">Download / Listen</a>
-                    </p>
-                </div>
-
-                <!-- General Rules -->
-                <div class="box-frame general-rules">
-                    <h2>Contest Rules|</h2>
-                    <ul>
-                        <li>Use only sounds from the provided sample pack.</li>
-                        <li>All submissions must be original work.</li>
-                        <li>Deadline for submissions will be announced per contest.</li>
-                        <li>Tracks should not exceed 5 minutes.</li>
-                        <li>Respect community and copyright guidelines.</li>
-                    </ul>
-                </div>
-
+        <section class="contest-intro">
+            <div class="intro-content">
+                <h2>WHAT IS SUBSTANCES?</h2>
+                <h3>TRACK PRODUCTION CONTEST CREATED WITH INTENT</h3>
+                <p>
+                    SUBSTANCES is a collection of sounds for those unafraid to explore and experiment.
+                    Textures, layers, and rhythms form a foundation for your creative ideas, giving shape to the
+                    concepts spinning in your mind.
+                    Curated by KabaharT and produced along with fellow sound fanatics, the pack blends raw
+                    energy with meticulous detail. Every hit, one-shot, and loop is designed to inspire, challenge,
+                    and push your sonic boundaries.
+                    More than a pack, SUBSTANCES is a platform for emerging producers – a test, a challenge,
+                    and an opportunity to face fear, give it your all, and release your unshackled self into the
+                    world. Through contests, collaborations, and live showcases, Fosfor supports creators in
+                    turning experimentation into fully realized tracks, performances, and releases.
+                    Dive in, create, and let sound speak what words cannot.
+                </p>
             </div>
         </section>
-        <footer class="site-footer">
-            <img src="images/ascii.png" alt="ASCII Art Fosfor" class="footer-ascii"/>
-            <div class="footer-spacer"></div>
+
+        <section class="contest-details">
+            <h2>The creative contest put simply</h2>
+
+            <div class="contest-text">
+                <p>
+                    The creative contest put simply
+                    Lithuania’s electronic music scene has been inspiring us for a long time, and now’s the time
+                    to give something back. Not only are we releasing our first sample pack for free, but we‘re
+                    also inviting you to take part in our creative contest – SUBSTANCES.
+                    The course is simple:
+                    • Download the sample pack from our bio
+                    • Create an original 3–5 min. track following the provided guidelines
+                    • Send it to us – your creation will be evaluated by our jury and listeners
+                    Send the track over to label.fosfor@gmail.com by May 1st. The best tracks will be featured
+                    on our SoundCloud, and those with the most support will receive additional prizes from us
+                    and our sponsors.
+                    Show us what form sound can take.
+                </p>
+            </div>
+
+            <button>Submit entry</button>
+        </section>
+
+        <section class="contest-archive">
+            <h2>ARCHIVE</h2>
+            <h3>2025</h3>
+            <p>On August 1st, the project moved forward and arrived in Vilnius. Fosfor made its debut at SODAS 2123 — a space where
+noise feels natural, where concrete absorbs everything but energy, and where creation is allowed to speak for itself.
+The night unfolded in dark, dense, broken forms of sound. Carefully selected guests, live performances, and our resident
+crew shaped the atmosphere, each perspective adding a new layer until it formed a single textured whole</p>
+        </section>
+
+       <footer>
+            <div class="footer-content">
+                <div class="footer-text">
+                    <p>TELL US YOUR<br>DREAMS.</p>
+                    <p>OR JUST SIMPLY SAY HI.</p>
+                    <button class="contact-btn">Contact us →</button>
+                </div>
+                <nav class="footer-nav">
+                    <ul>
+                        <li>NEWS</li>
+                        <li>ABOUT</li>
+                        <li>EVENTS</li>
+                        <li>SUBSTANCES</li>
+                        <li>CONTACT</li>
+                    </ul>
+                </nav>
+            </div>
+            <img src="images/FOSFORlogo.png">
         </footer>
     </main>
 </body>
