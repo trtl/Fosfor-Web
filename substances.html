@@ -4,19 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Substances — Fosfor Web</title>
-    <link rel="stylesheet" href="css/styles.css">\
+    <link rel="stylesheet" href="css/styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;700;800&display=swap" rel="stylesheet">
     <script src="js/script.js" defer></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
 </head>
 <body class="page-substances">
     <main>
-        <header>
+        <header class="container">
             <img src="images/FOSFORlogo.png">
-            <p>
-                FOSFOR IS A CULTURAL SIGNAL NETWORK-AN EVOLVING CHAIN OF EVENTS, ARCHIVES, AND 
-                COLLABORATIONS SHAPING A SHARED SONIC MEMORY ACROSS COMMUNITIES.
-            </p>
+            <div class="header-marquee">
+                <p class="header-text">
+                    FOSFOR IS A CULTURAL SIGNAL NETWORK—AN EVOLVING CHAIN OF EVENTS, ARCHIVES, AND 
+                    COLLABORATIONS SHAPING A SHARED SONIC MEMORY ACROSS COMMUNITIES.
+                </p>
+            </div>
         </header>
         <nav>
             <div class="nav-led"></div>
@@ -34,7 +36,7 @@
             <img src="images/hero1.png">
         </div>
 
-        <section class="contest-intro">
+        <section class="container contest-intro">
             <div class="intro-content">
                 <h2>WHAT IS SUBSTANCES?</h2>
                 <h3>TRACK PRODUCTION CONTEST CREATED WITH INTENT</h3>
@@ -54,7 +56,7 @@
             </div>
         </section>
 
-        <section class="contest-details">
+        <section class="container contest-details">
             <h2>The creative contest put simply</h2>
 
             <div class="contest-text">
@@ -73,37 +75,33 @@
                     Show us what form sound can take.
                 </p>
             </div>
-
-            <button>Submit entry</button>
         </section>
 
-        <section class="contest-archive">
+        <section class="container contest-archive">
             <h2>ARCHIVE</h2>
             <h3>2025</h3>
-            <p>On August 1st, the project moved forward and arrived in Vilnius. Fosfor made its debut at SODAS 2123 — a space where
-noise feels natural, where concrete absorbs everything but energy, and where creation is allowed to speak for itself.
-The night unfolded in dark, dense, broken forms of sound. Carefully selected guests, live performances, and our resident
-crew shaped the atmosphere, each perspective adding a new layer until it formed a single textured whole</p>
+            <p> On August 1st, the project moved forward and arrived in Vilnius. Fosfor made its debut at SODAS 2123 — a space where
+                noise feels natural, where concrete absorbs everything but energy, and where creation is allowed to speak for itself.
+                The night unfolded in dark, dense, broken forms of sound. Carefully selected guests, live performances, and our resident
+                crew shaped the atmosphere, each perspective adding a new layer until it formed a single textured whole
+            </p>
         </section>
 
        <footer>
-            <div class="footer-content">
-                <div class="footer-text">
-                    <p>TELL US YOUR<br>DREAMS.</p>
-                    <p>OR JUST SIMPLY SAY HI.</p>
-                    <button class="contact-btn">Contact us →</button>
+            <div class="container footer-content">
+                <div class="footer-top">
+                    <div class="footer-text">
+                        <p>TELL US YOUR<br>DREAMS.</p>
+                        <p>OR JUST SIMPLY SAY HI.</p>
+                        <button class="contact-btn">Contact us →</button>
+                    </div>
+                    <nav class="footer-nav">
+                    </nav>
                 </div>
-                <nav class="footer-nav">
-                    <ul>
-                        <li>NEWS</li>
-                        <li>ABOUT</li>
-                        <li>EVENTS</li>
-                        <li>SUBSTANCES</li>
-                        <li>CONTACT</li>
-                    </ul>
-                </nav>
+                <div class="footer-bottom">
+                    <img src="images/FOSFORlogo.png">
+                </div>
             </div>
-            <img src="images/FOSFORlogo.png">
         </footer>
     </main>
 </body>
